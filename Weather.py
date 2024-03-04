@@ -13,5 +13,5 @@ async def getweather():
       x = input("Enter the city name: ")
       weather = await client.get(f'{x}')
       z = (weather.current.temperature-32)*(5/9)
-      print(f"Temperature: {round(z)}")
+      print(f"Temperature: {round(z)}°")
 asyncio.run(getweather())
